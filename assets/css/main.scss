@@ -23,6 +23,7 @@ body {
   font-variant-ligatures: contextual;
   -webkit-overflow-scrolling: touch;
   -webkit-text-size-adjust: 100%;
+  word-wrap: break-word;
 
   @media ($phone) {
     font-size: 1rem;
