@@ -6,7 +6,7 @@
     <label for="{{ .Get "id" | default $id }}">
       <span class="collapsable-code__language">{{ .Get "language" }}</span>
       {{ if .Get "title" }}<span class="collapsable-code__title">{{ .Get "title" | markdownify }}</span>{{ end }}
-      <span class="collapsable-code__toggle" data-label-expand="{{ .Get "expand" | default "△" }}" data-label-collapse="{{ .Get "collapse" | default "▽" }}"></span>
+      <span class="collapsable-code__toggle" data-label-expand="{{ .Get "expand" | default "Show" }}" data-label-collapse="{{ .Get "collapse" | default "Hide" }}"></span>
     </label>
     <pre {{ if .Get "language" }}class="language-{{ .Get "language" }}" {{ end }}><code>{{ .Inner | string }}</code></pre>
   </div>

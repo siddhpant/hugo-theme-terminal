@@ -17,6 +17,7 @@ The following are the features I added after forking.
 - Mukta Devanagari font.
 - Center images by default.
 - Custom prefix for creation date.
+- Changed default expand/collapse label for `{{ code }}` shortcode to Show/Hide.
 - And other improvements (see git logs).
 
 ---
