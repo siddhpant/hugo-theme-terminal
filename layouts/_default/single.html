@@ -4,19 +4,21 @@
     <a href="{{ .Permalink }}">{{ .Title | markdownify }}</a>
   </h1>
   <div class="post-meta">
-    {{- if .Date -}}
-      <time class="post-date">
-        {{- or $.Site.Params.createdDatePrefix "Created" -}}
-        &nbsp;
-        {{- .Date.Format "2006-01-02" -}}
-      </time>
-
-      {{- if and ($.Site.Params.showLastUpdated) (ne .Date .Lastmod) -}}
+    {{- if $.Param "showLastUpdated" -}}
+      {{- if .Date -}}
         <time class="post-date">
-          {{- or $.Site.Params.updatedDatePrefix "Updated" -}}
+          {{- or $.Site.Params.createdDatePrefix "Created" -}}
           &nbsp;
-          {{- .Lastmod.Format "2006-01-02" -}}
+          {{- .Date.Format "2006-01-02" -}}
         </time>
+
+        {{- if ne .Date .Lastmod -}}
+          <time class="post-date">
+            {{- or $.Site.Params.updatedDatePrefix "Updated" -}}
+            &nbsp;
+            {{- .Lastmod.Format "2006-01-02" -}}
+          </time>
+        {{- end -}}
       {{- end -}}
     {{- end -}}
 
