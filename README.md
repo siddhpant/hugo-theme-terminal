@@ -19,6 +19,7 @@ The following are the features I added after forking.
 - Custom prefix for creation date.
 - Changed default expand/collapse label for `{{ code }}` shortcode to Show/Hide.
 - "showLastUpdated" hides date too.
+- Overridable main footer ("copyright") text via partial.
 - And other improvements (see git logs).
 
 ---
