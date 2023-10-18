@@ -6,6 +6,8 @@ This theme is a fork of [panr/hugo-theme-terminal](https://github.com/panr/hugo-
 
 For the old (i.e. forked) README, see [README_old.md](README_old.md).
 
+For config, refer to [siddhpant/siddhpant.github.io](https://github.com/siddhpant/siddhpant.github.io/).
+
 ---
 
 # Extra features
