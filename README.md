@@ -20,7 +20,7 @@ The following are the features I added after forking:
 - Center images by default.
 - Custom prefix for creation date.
 - Last updated is shown only when lastmodified is actually different.
-- "showLastUpdated" being true hides creation date too.
+- "showLastUpdated" being false hides creation date too.
 - Changed default expand/collapse label for `{{ code }}` shortcode to Show/Hide.
 - Overridable main footer ("copyright") text via partial.
 - Other improvements and bug fixes (see the git log).
