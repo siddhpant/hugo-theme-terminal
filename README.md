@@ -23,6 +23,7 @@ The following are the features I added after forking:
 - "showLastUpdated" being false hides creation date too.
 - Changed default expand/collapse label for `{{ code }}` shortcode to Show/Hide.
 - Overridable main footer ("copyright") text via partial.
+- Structured data support for SEO.
 - Other improvements and bug fixes (see the git log).
 
 ---
