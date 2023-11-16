@@ -24,6 +24,7 @@ The following are the features I added after forking:
 - Changed default expand/collapse label for `{{ code }}` shortcode to Show/Hide.
 - Overridable main footer ("copyright") text via partial.
 - Structured data support for SEO.
+- `noindex = true` also adds nofollow tag.
 - Other improvements and bug fixes (see the git log).
 
 ---
