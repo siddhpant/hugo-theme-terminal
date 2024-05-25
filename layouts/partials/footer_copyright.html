@@ -5,19 +5,21 @@
 
 
 {{ if $.Site.Params.Copyright }}
-	{{ $.Site.Params.Copyright | safeHTML }}
+	{{ $.Site.Params.Copyright | safeHTML }}<br>
 {{ else }}
-	© {{ now.Year }} Powered by
-	<a href="https://gohugo.io">Hugo</a>
+	©
+
+	{{ if and ($.Site.Params.CopyrightStartYear)
+		  (lt $.Site.Params.CopyrightStartYear now.Year) }}
+		{{ $.Site.Params.CopyrightStartYear }} -
+	{{ end }}
+
+	{{ now.Year }} {{ $.Site.Params.Author }}<br>
 {{ end }}
 
-::
-<a href="https://github.com/panr/hugo-theme-terminal" target="_blank">Theme</a>
-made by
-<a href="https://github.com/panr" target="_blank">panr</a>
-
-::
-<a href="https://github.com/siddhpant/hugo-theme-terminal" target="_blank">Forked</a>
+Theme by <a href="https://github.com/panr" target="_blank">panr</a>,
+<a href="https://github.com/siddhpant/hugo-theme-terminal" target="_blank">
+	improved</a>	<!-- If you break the line, link will have a space. -->
 by
 <a href="https://github.com/siddhpant" target="_blank">siddhpant</a>
 
