@@ -1,11 +1,10 @@
 <!--
 Make raw links clickable (hyperlinks).
 
-Note: It is important that there is no trailing whitespace or newline at the
-      end, otherwise we will have an extra space rendered after all hyperlinks.
+Note: The whitespace removal is very important.
 -->
 
-<a
+{{- "" -}}<a
 	href="{{ .Destination | safeURL }}"
 
 	{{ with .Title}}
@@ -19,4 +18,4 @@ Note: It is important that there is no trailing whitespace or newline at the
 		target="_blank"
 	{{ end }}
 
->{{ .Text | safeHTML }}</a>
+>{{ .Text | safeHTML }}</a>{{- "" -}}
