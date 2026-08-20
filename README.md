@@ -26,6 +26,7 @@ The following are the features I added after forking:
 - Copyright start year and author support in the footer.
 - Structured data support for SEO.
 - `noindex = true` also adds nofollow tag.
+- Add scroll to codeblocks so it doesn't get wrapped on mobike and short screens.
 - Other improvements and bug fixes (see the git log).
 
 ---
